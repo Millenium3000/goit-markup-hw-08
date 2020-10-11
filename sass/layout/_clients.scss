@@ -10,15 +10,15 @@
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0;
+  padding-left: 0px;
   margin-right: 0px;
 }
 
-@media screen and (min-width: 768px) {
-  .clients__item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
+// @media screen and (min-width: 768px) {
+//   .clients__item:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
 
 .clients__link {
   color: #afb1b8;
