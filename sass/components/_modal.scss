@@ -5,12 +5,24 @@
     left: 50%;
 
     padding: 40px;
-    min-width: 528px;
-    min-height: 581px;
+    width: 450px;
     background-color: $primary-white-color;
 
     transform: translate(-50%,-50%) scale(1);
     transition: transform $transition-argument;
+
+    @media screen and (max-width: 479px) {
+        width: calc(100% - 30px);
+    }
+
+    @media screen and (max-width: 1199px) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 }
 
 .backdrop.is-hidden .modal {
@@ -115,13 +127,16 @@
 .form__checkbox {
     display: inline-block;
     margin-top: 20px;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+    }
 }
 
 .form__checkbox-icon {
     content: '';
     display: inline-block;
-    margin-left: 12px;
-    margin-right: 5px;
+    margin-right: 3px;
     vertical-align: middle;
     width: 16px;
     height: 15px;
@@ -136,6 +151,10 @@
         background-image: url('../images/check-modal.svg');
         background-size: contain;
         background-origin: border-box;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
     }
 }
 
